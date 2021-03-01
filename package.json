@@ -2,5 +2,8 @@
   "name": "create-wallet",
   "dependencies": {
     "bitcoinjs-lib": "^5.2.0"
+  },
+  "bin": {
+    "bitcoin-wallet": "bitcoin-wallet.js"
   }
 }

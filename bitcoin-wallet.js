@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 /**
  * Bitcoin Wallet Generator
  * Copyright 2021 Jamiel Sharief.

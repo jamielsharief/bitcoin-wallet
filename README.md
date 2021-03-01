@@ -40,6 +40,20 @@ You can also pass random bytes directly
 $ node bitcoin-wallet.js "$(head -c 32 </dev/urandom)"
 ```
 
+## Global Setup
+
+You can install this command gloablly
+
+```bash
+$ npm install -g .
+```
+
+Then run the command from anywhere
+
+```bash
+$ bitcoin-wallet
+```
+
 ## Resources
 
 - [How Bitcoin Wallets Work](https://www.youtube.com/watch?v=GSTiKjnBaes)
