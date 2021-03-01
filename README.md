@@ -43,4 +43,5 @@ $ node bitcoin-wallet.js "$(head -c 32 </dev/urandom)"
 ## Resources
 
 - [How Bitcoin Wallets Work](https://www.youtube.com/watch?v=GSTiKjnBaes)
+- [How to create Bitcoin Address](https://en.bitcoin.it/wiki/Technical_background_of_version_1_Bitcoin_addresses)
 - [Encrypting/Descrypting crypto private keys](https://github.com/bitcoinjs/bip38)
