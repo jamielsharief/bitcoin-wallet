@@ -1,0 +1,6 @@
+{
+  "name": "create-wallet",
+  "dependencies": {
+    "bitcoinjs-lib": "^5.2.0"
+  }
+}
