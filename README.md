@@ -28,16 +28,17 @@ $ node bitcoin-wallet.js
 }
 ```
 
-If you prefer to use your own seed, you can pass the data which must be at least 32 characters long.
+If you prefer to use your own seed, you can pass a randomly generated string. A base64 seed string should be at least 44 characters and a hex string should to be at least 64 characters to get 256bits of entropy.
 
 ```bash
-$ node bitcoin-wallet.js 'AULKGe8sM6hE1PDBRcjR9ZezERW3R7Oh`
+$ node bitcoin-wallet.js 'Wl0Psa38fcnjmR8d270kUoryiEkhZLPv7rjMafV98ic='
 ```
 
-You can also pass random bytes directly
+To generate seed from the command line
 
 ```bash
-$ node bitcoin-wallet.js "$(head -c 32 </dev/urandom)"
+$ node bitcoin-wallet.js "$(openssl rand -hex 32)"
+$ node bitcoin-wallet.js "$(openssl rand -base64 32)"
 ```
 
 ## Global Setup
@@ -52,6 +53,14 @@ Then run the command from anywhere
 
 ```bash
 $ bitcoin-wallet
+```
+
+## Bash Version
+
+I have included a bash version which is even more transparent, it requires the the `base58` package.
+
+```bash
+$ apt install openssl python3-pip xxd base58
 ```
 
 ## Resources
