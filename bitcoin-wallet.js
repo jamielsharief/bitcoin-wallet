@@ -18,6 +18,11 @@ if (args.length == 0) {
     var keyPair = bitcoin.ECPair.makeRandom();
 }
 else {
+    /**
+     * Base64: 6 bits per char CHAR(44)
+     * Hex: 4 bits per char = CHAR(64)
+     * Binary: 8 bits per byte = BINARY(32)
+     */
     if (args[0].length < 32) {
         throw new Error('The seed must be at least 32 characters long');
     }
